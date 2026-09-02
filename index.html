@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Luma
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Categories</a>
+            <a href="#">About</a>
+        </div>
+        <div class="nav-actions">
+            <button id="search-btn">🔍</button>
+            <input type="text" class="search-input" placeholder="Search products...">
+            <a href="cart.html">
+                🛒 <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tag">NEW COLLECTION</p>
+            <h1>Style that speaks for itself.</h1>
+            <p>
+                Discover our latest collection of products designed to make everyday life better.
+            </p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+    </section>
+    <section class="search-results">
+    <h2>Search Results</h2>
+    <div class="products" id="search-results-container"></div>
+</section>
+    <section class="categories">
+        <a href="#">All</a>
+        <a href="#">Clothing</a>
+        <a href="#">Shoes</a>
+        <a href="#">Accessories</a>
+        <a href="#">Beauty</a>
+        <a href="#">Electronics</a>
+    </section>
+    <section class="products"  id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card featured" data-category="Accessories">
+                <div class="product-image">
+                    <img src="assets/images/product1.jpg" alt="">
+                </div>
+
+                <h3>Classic Black Bag</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Accessories">
+                <div class="product-image">
+                    <img src="assets/images/product2.jpg" alt="">
+                </div>
+                <h3>Everyday Tote Bag</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product3.jpg" alt="">
+                </div>
+                <h3>Straight Leg Jeans</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$28.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product4.jpg" alt="">
+                </div>
+                <h3>Classic Black Jeans</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$37.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product5.jpg" alt="">
+                </div>
+                <h3>Blue Button Down Shirt</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$44.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product6.jpg" alt="">
+                </div>
+                <h3>White T-Shirt</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$32.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product7.jpg" alt="">
+                </div>
+                <h3>Butterfly Floral Maxi Dress</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$64.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product8.jpg" alt="">
+                </div>
+                <h3>Golden Embroidered A-Line Dress</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$69.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Electronics">
+                <div class="product-image">
+                    <img src="assets/images/product9.jpg" alt="Wireless Bluetooth Speaker">
+                </div>
+
+                <h3>Wireless Bluetooth Speaker</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Beauty">
+                <div class="product-image">
+                    <img src="assets/images/product10.jpg" alt="Hydrating Face Serum">
+                </div>
+
+                <h3>Hydrating Face Serum</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Beauty">
+                <div class="product-image">
+                    <img src="assets/images/product11.jpg" alt="Everyday Perfume">
+                </div>
+
+                <h3>Everyday Perfume</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$44.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Shoes">
+                <div class="product-image">
+                    <img src="assets/images/product12.jpg" alt="Everyday Running Shoes">
+                </div>
+
+                <h3>Everyday Running Shoes</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$69.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Shoes">
+                <div class="product-image">
+                    <img src="assets/images/product13.jpg" alt="Leather Loafers">
+                </div>
+
+                <h3>Leather Loafers</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$74.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Accessories">
+                <div class="product-image">
+                    <img src="assets/images/product14.jpg" alt="Black Leather Wallet">
+                </div>
+
+                <h3>Black Leather Wallet</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product15.jpg" alt="Beige Oversized Hoodie">
+                </div>
+
+                <h3>Beige Oversized Hoodie</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Shoes">
+                <div class="product-image">
+                    <img src="assets/images/product16.jpg" alt="Casual Sandals">
+                </div>
+
+                <h3>Casual Sandals</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Accessories">
+                <div class="product-image">
+                    <img src="assets/images/product17.jpg" alt="Minimalist Wristwatch">
+                </div>
+
+                <h3>Minimalist Wristwatch</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$54.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Clothing">
+                <div class="product-image">
+                    <img src="assets/images/product18.jpg" alt="Casual Cotton Pants">
+                </div>
+
+                <h3>Casual Cotton Pants</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$34.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Shoes">
+                <div class="product-image">
+                    <img src="assets/images/product19.jpg" alt="Classic White Sneakers">
+                </div>
+
+                <h3>Classic White Sneakers</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Electronics">
+                <div class="product-image">
+                    <img src="assets/images/product20.jpg" alt="Wireless Earbuds">
+                </div>
+
+                <h3>Wireless Earbuds</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Electronics">
+                <div class="product-image">
+                    <img src="assets/images/product21.jpg" alt="Wireless Headphones">
+                </div>
+
+                <h3>Wireless Headphones</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Beauty">
+                <div class="product-image">
+                    <img src="assets/images/product22.jpg" alt="Makeup Brush Set">
+                </div>
+
+                <h3>Makeup Brush Set</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$22.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Electronics">
+                <div class="product-image">
+                    <img src="assets/images/product23.jpg" alt="Smartwatch">
+                </div>
+
+                <h3>Smartwatch</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card featured" data-category="Beauty">
+                <div class="product-image">
+                    <img src="assets/images/product24.jpg" alt="Rose Lip Tint">
+                </div>
+
+                <h3>Rose Lip Tint</h3>
+                <p class="rating">★★★★★</p>
+                <p class="price">$14.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="sale-banner">
+        <div>
+            <p>LIMITED TIME OFFER</p>
+            <h2>Up to 40% off selected styles</h2>
+            <p>Refresh your wardrobe with our latest collection.</p>
+        </div>
+        <button>Shop Sale</button>
+    </section>
+    <section class="benefits">
+        <h2>Why Shop With Us?</h2>
+        <div class="benefit-container">
+            <div class="benefit-card">
+                <div class="benefit-icon">🚚</div>
+                <h3>Fast Delievery</h3>
+                <p>Get your favorite products delievered right to your doorstep.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔒</div>
+                <h3>Secure Payment</h3>
+                <p>Your payments are protected with safe and secure checkout.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">↩️</div>
+                <h3>Easy Returns</h3>
+                <p>Changed your mind? Return your order easily and hassle-free.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💬</div>
+                <h3>24/7 Support</h3>
+                <p>We're always here to help whenever you need us.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="newsletter">
+        <h2>Stay in the loop</h2>
+        <p>
+            Subscribe to get updates about new products, special offers, and more.
+        </p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Luma</h2>
+                <p>Style that speaks for itself.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Shop</h3>
+                    <a href="#">All Products</a>
+                    <a href="#">Clothing</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Sale</a>
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">FAQs</a>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Luma Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
